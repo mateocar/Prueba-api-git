@@ -1,6 +1,7 @@
 # Prueba-api-git
 
-API REST desarrollada con FastAPI que obtiene la información de un usuario GitHub autenticado.
+API REST desarrollada con FastAPI que obtiene la información de un usuario GitHub autenticado, con 
+una arquitectura monolitica de capas.
 
 ## Tecnologías
 - Python 3.12
