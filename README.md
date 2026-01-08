@@ -16,3 +16,6 @@ cd Prueba-api-git.git
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+## Ejecutar el proyecto
+uvicorn app.main:app --reload
