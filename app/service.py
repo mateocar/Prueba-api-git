@@ -7,6 +7,7 @@ header = {
     "Accept": "application/vnd.github+json"
 }
 
+#funcion para obtener repositorios
 def get_repositories():
     response = requests.get(
         f"{URL_GITHUB_API}/user/repos",
@@ -15,6 +16,7 @@ def get_repositories():
 
     return response.json()
 
+#funcion para obtener organizaciones
 def get_organizations():
     response = requests.get(
         f"{URL_GITHUB_API}/user/orgs",
@@ -23,6 +25,7 @@ def get_organizations():
 
     return response.json()
 
+#funcion para obtener pull requests
 def get_pull_requests(username):
     response = requests.get(
         f"{URL_GITHUB_API}/search/issues?q=author:{username}+type:pr",
