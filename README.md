@@ -57,15 +57,27 @@ Instalar dependencias
 ```
 pip install -r requirements.txt
 ```
-## Configurar variables de entorno
+## Generación del token de GitHub
 
-  Crear un archivo .env en la raíz del proyecto:
+Para consumir la API de GitHub es necesario generar un **Personal Access Token**.
+
+### Pasos:
+
+1. Ingresar a GitHub y acceder a:
+   - **Settings → Developer settings → Personal access tokens**
+2. Seleccionar **Tokens (classic)**.
+3. Hacer clic en **Generate new token**.
+4. Asignar un nombre descriptivo al token.
+5. Seleccionar los siguientes permisos:
+   - `repo`
+   - `read:org`
+6. Generar el token y **copiarlo**.
+
+## Configurar variables de entorno
+    
+Crear un archivo .env en la raíz del proyecto:
 
     GITHUB_TOKEN=tu_personal_access_token
-    
- Genera el token, y se debe tener permisos para:
-  - repo
-  - read:org
 
 Ejecutar el proyecto
 ```
