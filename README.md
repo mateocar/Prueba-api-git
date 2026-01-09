@@ -33,12 +33,13 @@ Pasos necesarios para clonar, configurar y ejecutar el proyecto en un entorno lo
 - Requests
 - python-dotenv
 
-### Clonar el repositorio
+## Clonar el repositorio
+
 ```bash
 git clone https://github.com/mateocar/Prueba-api-git.git
 cd Prueba-api-git
 ```
-Crear entorno virtual
+## Crear entorno virtual
 python -m venv venv
 
 Activar el entorno virtual
@@ -56,13 +57,13 @@ Instalar dependencias
 ```
 pip install -r requirements.txt
 ```
-Configurar variables de entorno
+## Configurar variables de entorno
 
   Crear un archivo .env en la raíz del proyecto:
 
     GITHUB_TOKEN=tu_personal_access_token
     
- El token debe tener permisos para:
+ Genera el token, y se debe tener permisos para:
   - repo
   - read:org
 
