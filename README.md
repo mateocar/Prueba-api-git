@@ -78,6 +78,12 @@ Para consumir la API de GitHub es necesario generar un **Personal Access Token**
 Crear un archivo .env en la raíz del proyecto:
 
     GITHUB_TOKEN=tu_personal_access_token
+    
+ Importante:
+
+  - El token define qué usuario se consulta
+  - Si el token no es válido o no existe, la API retornará un error
+  - No se debe modificar el código para cambiar de usuario
 
 Ejecutar el proyecto
 ```
