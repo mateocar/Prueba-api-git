@@ -108,6 +108,5 @@ Este endpoint retorna:
 ### Notas
 - El proyecto no utiliza base de datos.
 - La información se obtiene directamente desde la API de GitHub.
-- La solución es simple y clara, acorde a una prueba técnica de nivel junior.
 
 
